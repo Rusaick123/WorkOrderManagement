@@ -1,0 +1,244 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  height: 100vh; /* Ensure the body takes full height */
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: #0b5886;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* Navigation bar styles */
+.nav-bar {
+  background-color: #0b5886;
+  overflow: hidden;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar #image {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar #image img {
+  margin-right: 1rem;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #0b5886;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  margin-left: 1rem; /* Reduce the margin to bring buttons closer */
+}
+
+.nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #0b5886;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+  background-color: white;
+  color: #0b5886;
+}
+
+/* Welcome container styles */
+.welcome-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container h2 {
+  margin-top: 0;
+  color: #0b5886;
+}
+
+.welcome-container p {
+  color: #0b5886;
+}
+
+.functions-container {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.functions-container h3 {
+  color: #0b5886;
+}
+
+.functions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.function-item {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 calc(30% - 1rem); /* Adjusted for three items per row */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.function-item img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.function-item h4 {
+  color: #0b5886;
+  margin: 0.5rem 0;
+}
+
+.function-item p {
+  color: #333;
+}
+
+.function-item:hover {
+  transform: translateY(-10px);
+}
+/* Footer styles */
+footer {
+  background-color: #0b5886;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.content {
+  flex: 1; /* Allow the content to grow and take the remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; /* Adjust padding to account for the fixed header */
+  padding-bottom: 60px; /* Adjust padding to account for the fixed footer */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Login form */
+.login-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.login-form h2 {
+  color: #0b5886;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #0b5886;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0a4761;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+.register-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+.register-container .register-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.register-form h2 {
+  color: #0b5886;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
