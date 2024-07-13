@@ -33,9 +33,9 @@
         <div class="form-group">
             <label for="department">Department:</label>
             <select name="department" id="department" required>
-                <option value="IT">IT</option>
-                <option value="HR">HR</option>
-                <option value="Finance">Finance</option>
+                <option value=" Office of the Dean"> Office of the Dean</option>
+                <option value="Dept. of Languages">Dept. of Languages</option>
+                <option value="Dept. of political Sciences">Dept. of political Sciences</option>
             </select>
         </div>
         <input type="submit" value="Register">
