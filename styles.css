@@ -4,20 +4,23 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  height: 100vh; /* Ensure the body takes full height */
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+/* Header styles */
 header {
   background-color: #0b5886;
   color: white;
-  padding: 1rem;
   text-align: center;
+  padding: 1rem;
   position: fixed;
-  top: 0;
+  bottom: 0;
   width: 100%;
   z-index: 1000;
 }
+
 /* Navigation bar styles */
 .nav-bar {
   background-color: #0b5886;
@@ -52,7 +55,7 @@ header {
 }
 
 .nav-bar ul li {
-  margin-left: 1rem; /* Reduce the margin to bring buttons closer */
+  margin-left: 1rem;
 }
 
 .nav-bar ul li a {
@@ -70,89 +73,17 @@ header {
   color: #0b5886;
 }
 
-/* Welcome container styles */
-.welcome-container {
-  text-align: center;
-  padding: 2rem;
-  background-color: white;
-  margin: 2rem auto;
-  max-width: 900px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-container h2 {
-  margin-top: 0;
-  color: #0b5886;
-}
-
-.welcome-container p {
-  color: #0b5886;
-}
-
-.functions-container {
-  text-align: left;
-  margin-top: 2rem;
-}
-
-.functions-container h3 {
-  color: #0b5886;
-}
-
-.functions-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.function-item {
-  background-color: #f4f4f4;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  flex: 1 1 calc(30% - 1rem); /* Adjusted for three items per row */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.function-item img {
-  max-width: 100px;
-  margin-bottom: 1rem;
-}
-
-.function-item h4 {
-  color: #0b5886;
-  margin: 0.5rem 0;
-}
-
-.function-item p {
-  color: #333;
-}
-
-.function-item:hover {
-  transform: translateY(-10px);
-}
-/* Footer styles */
-footer {
-  background-color: #0b5886;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 1000;
-}
+/* Content styles */
 .content {
-  flex: 1; /* Allow the content to grow and take the remaining space */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px; /* Adjust padding to account for the fixed header */
-  padding-bottom: 60px; /* Adjust padding to account for the fixed footer */
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
+/* Login and Register container styles */
 .login-container {
   display: flex;
   justify-content: center;
@@ -160,10 +91,9 @@ footer {
   height: 100%;
 }
 
-/* Login form */
 .login-form {
   background-color: #fff;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -172,7 +102,7 @@ footer {
 
 .login-form h2 {
   color: #0b5886;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .form-group {
@@ -182,11 +112,12 @@ footer {
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   color: #333;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
@@ -208,23 +139,14 @@ button[type="submit"]:hover {
   background-color: #0a4761;
 }
 
-.error {
-  color: red;
-  margin-bottom: 1rem;
-}
-.register-container {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+/* Footer styles */
+footer {
+  background-color: #0b5886;
+  color: white;
   text-align: center;
-}
-.register-container .register-form {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
 }
