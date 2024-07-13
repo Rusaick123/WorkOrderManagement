@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include 'header.php'; ?>
+<nav class="nav-bar">
+    <div id="image">
+        <img src="img/logo.jpeg" alt="Logo">
+        <h1>Work Order Management System</h1>
+    </div>
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="login.php">Login</a></li>
+    </ul>   
+</nav>
     
     <div class="welcome-container">
         <h2>Welcome to the Work Order Management System</h2>
