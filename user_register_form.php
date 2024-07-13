@@ -9,8 +9,8 @@
 <body>
 <?php include 'header.php'; ?>
 <div class="content">
-    <div class="login-container">
-        <form class="login-form" action="register_check.php" method="post">
+    <div class="register-container">
+        <form class="register-form" action="register_check.php" method="post">
             <h2>User Registration</h2>
             <div class="form-group">
                 <label for="userid">User Id:</label>
@@ -29,6 +29,7 @@
                 <select id="usertype" name="usertype" required>
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
+                    <option value="recommender">Recommender</option>
                 </select>
             </div>
             <div class="form-group">
