@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Order Management System</title>
+    <title>Work Order Management System<</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<?php include 'header.php'; ?>
 <div class="content">
-    <div class="register-container">
-        <form class="register-form" action="register_check.php" method="post">
+    <div class="login-container">
+        <form class="login-form" action="register_check.php" method="post">
             <h2>User Registration</h2>
             <div class="form-group">
                 <label for="userid">User Id:</label>
@@ -28,7 +27,6 @@
                 <label for="usertype">User Type:</label>
                 <select id="usertype" name="usertype" required>
                     <option value="user">User</option>
-                    <option value="admin">Admin</option>
                     <option value="recommender">Recommender</option>
                 </select>
             </div>
@@ -44,10 +42,13 @@
                     <option value="Dept. of Political Sciences">Dept. of Political Sciences</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="mobileno">Mobile No:</label>
+                <input type="text" id="mobileno" name="mobileno">
+            </div>
             <button type="submit">Register</button>
         </form>
     </div>
 </div>
-<?php include 'footer.php'; ?>
 </body>
 </html>

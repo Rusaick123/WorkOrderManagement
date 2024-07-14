@@ -117,12 +117,18 @@ header {
 }
 
 .form-group input,
-.form-group select {
+.form-group select,
+.form-group textarea {
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+textarea {
+  height: 200px; /* Fixed height for the text area */
+  resize: none; /* Disable resizing */
 }
 
 button[type="submit"] {
